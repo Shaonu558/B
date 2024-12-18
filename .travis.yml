@@ -24,7 +24,7 @@
           "echo \"Starting Travis keep-alive...\"",
           "while true; do echo \"Travis keep-alive... \$(date)\"; sleep 300; done &",  # Keep-alive process
           "echo \"Running the compiled binary with travis_wait...\"",
-          "travis_wait 360 bash -c \"while true; do python3 m.py || echo 'Application crashed. Restarting...'; sleep 500; done\""
+          "travis_wait 360 bash -c \"while true; do python3 RAHUL.py || echo 'Application crashed. Restarting...'; sleep 500; done\""
         ],
         "timeout": 3600
       }
